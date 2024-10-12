@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Football Quiz</h1>
+        <form action="/submit_quiz" method="POST">
+            
+            <label for="q1">1. Who won the FIFA World Cup in 2022?</label><br>
+            <input type="radio" id="q1a" name="q1" value="France"> France<br>
+            <input type="radio" id="q1b" name="q1" value="Germany"> Germany<br>
+            <input type="radio" id="q1c" name="q1" value="Argentina"> Argentina<br><br>
+
+            <label for="q2">2. Lionel Messi has won the Ballon d'Or _ times.</label><br>
+            <input type="text" id="q2" name="q2" placeholder="Enter a number"><br><br>
+
+            <label for="q3">3. The Premier League is based in which country?</label><br>
+            <input type="radio" id="q3a" name="q3" value="England"> England<br>
+            <input type="radio" id="q3b" name="q3" value="Spain"> Spain<br>
+            <input type="radio" id="q3c" name="q3" value="Italy"> Italy<br><br>
+
+            <label for="q4">4. Cristiano Ronaldo has scored more than _ goals in his career.</label><br>
+            <input type="text" id="q4" name="q4" placeholder="Enter a number"><br><br>
+
+            <input type="submit" value="Submit Quiz">
+        </form>
+    </div>
+</body>
+</html>
